@@ -57,11 +57,11 @@ page encodings for languages that have fewer than 256 glyphs.
 
 To install the package on your system, run
 
-	go get github.com/akkaraponph/gofpdf
+	go get github.com/akkaraponph/ghostpdf
 
 Later, to receive updates, run
 
-	go get -u -v github.com/akkaraponph/gofpdf/...
+	go get -u -v github.com/akkaraponph/ghostpdf/...
 
 # Quick Start
 

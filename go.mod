@@ -1,4 +1,4 @@
-module github.com/akkaraponph/gofpdf
+module github.com/akkaraponph/ghostpdf
 
 go 1.12
 
