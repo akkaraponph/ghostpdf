@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/looksocial/gofpdf"
-	"github.com/looksocial/gofpdf/internal/example"
+	"github.com/looksocial/golpdf"
+	"github.com/looksocial/golpdf/internal/example"
 )
 
 func ExampleTtfParse() {

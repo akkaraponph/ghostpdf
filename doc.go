@@ -60,11 +60,11 @@ Installation
 
 To install the package on your system, run
 
-    go get github.com/looksocial/gofpdf
+    go get github.com/looksocial/golpdf
 
 Later, to receive updates, run
 
-    go get -u -v github.com/looksocial/gofpdf/...
+    go get -u -v github.com/looksocial/golpdf/...
 
 
 Quick Start

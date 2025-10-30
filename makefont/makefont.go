@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/looksocial/gofpdf"
+	"github.com/looksocial/golpdf"
 	"os"
 )
 
