@@ -65,9 +65,17 @@ func (f *Fpdf) tryLoadEmbeddedFont(familyStr, styleStr string) bool {
 		styleSuffixes = []string{"", "-Regular", "Regular"}
 	}
 
-	// Search paths: font/th/FamilyName/
-	searchPaths := []string{
-		path.Join("font/th", familyStr),
+	// FIX: Try both lowercase and capitalized versions of family name
+	// Since SetFont() converts to lowercase but folders are capitalized
+	familyVariations := []string{
+		familyStr, // lowercase (e.g., "tahoma")
+		strings.Title(strings.ToLower(familyStr)), // Capitalized (e.g., "Tahoma")
+	}
+
+	// Search paths: font/th/FamilyName/ (try both cases)
+	var searchPaths []string
+	for _, familyVar := range familyVariations {
+		searchPaths = append(searchPaths, path.Join("font/th", familyVar))
 	}
 
 	for _, searchPath := range searchPaths {
@@ -79,9 +87,9 @@ func (f *Fpdf) tryLoadEmbeddedFont(familyStr, styleStr string) bool {
 				} else {
 					filename = familyStr + suf + ext
 				}
-				
+
 				fullPath := path.Join(searchPath, filename)
-				
+
 				// Try to open the file from embedded FS
 				file, err := f.fontLoader.Open(fullPath)
 				if err == nil {
@@ -107,7 +115,7 @@ func (f *Fpdf) tryLoadEmbeddedFont(familyStr, styleStr string) bool {
 // GetEmbeddedFontFamilies returns a list of all available font families in the embedded fonts
 func GetEmbeddedFontFamilies() []string {
 	families := make(map[string]bool)
-	
+
 	// Walk through embedded font directories
 	fs.WalkDir(embeddedFonts, "font/th", func(path string, d fs.DirEntry, err error) error {
 		if err != nil || !d.IsDir() {
@@ -120,13 +128,12 @@ func GetEmbeddedFontFamilies() []string {
 		}
 		return nil
 	})
-	
+
 	// Convert map to sorted slice
 	result := make([]string, 0, len(families))
 	for family := range families {
 		result = append(result, family)
 	}
-	
+
 	return result
 }
-
