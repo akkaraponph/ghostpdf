@@ -73,21 +73,18 @@ func (f *Fpdf) tryLoadEmbeddedFont(familyStr, styleStr string) bool {
 	}
 
 	// Search paths: font/th/FamilyName/ (try both cases)
-	var searchPaths []string
 	for _, familyVar := range familyVariations {
-		searchPaths = append(searchPaths, path.Join("font/th", familyVar))
-	}
-
-	for _, searchPath := range searchPaths {
+		searchPath := path.Join("font/th", familyVar)
+		
 		for _, suf := range styleSuffixes {
 			for _, ext := range []string{".ttf", ".otf"} {
 				var filename string
 				if suf == "" {
-					filename = familyStr + ext
+					filename = familyVar + ext  // ← FIX: Use familyVar (capitalized) not familyStr
 				} else {
-					filename = familyStr + suf + ext
+					filename = familyVar + suf + ext  // ← FIX: Use familyVar
 				}
-
+				
 				fullPath := path.Join(searchPath, filename)
 
 				// Try to open the file from embedded FS
