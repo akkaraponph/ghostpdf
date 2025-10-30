@@ -65,9 +65,17 @@ func (f *Fpdf) tryLoadEmbeddedFont(familyStr, styleStr string) bool {
 		styleSuffixes = []string{"", "-Regular", "Regular"}
 	}
 
-	// Search paths: font/th/FamilyName/
-	searchPaths := []string{
-		path.Join("font/th", familyStr),
+	// FIX: Try both lowercase and capitalized versions of family name
+	// Since SetFont() converts to lowercase but folders are capitalized
+	familyVariations := []string{
+		familyStr,                                  // lowercase (e.g., "tahoma")
+		strings.Title(strings.ToLower(familyStr)), // Capitalized (e.g., "Tahoma")
+	}
+
+	// Search paths: font/th/FamilyName/ (try both cases)
+	var searchPaths []string
+	for _, familyVar := range familyVariations {
+		searchPaths = append(searchPaths, path.Join("font/th", familyVar))
 	}
 
 	for _, searchPath := range searchPaths {
