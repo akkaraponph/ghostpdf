@@ -2,11 +2,12 @@ package gofpdi
 
 import (
 	"bytes"
-	"github.com/looksocial/golpdf"
-	"github.com/looksocial/golpdf/internal/example"
 	"io"
 	"sync"
 	"testing"
+
+	"github.com/akkaraponph/gofpdf"
+	"github.com/akkaraponph/gofpdf/internal/example"
 )
 
 func ExampleNewImporter() {
