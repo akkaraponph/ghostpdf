@@ -3,9 +3,9 @@ package barcode_test
 import (
 	"testing"
 
-	"github.com/akkaraponph/gofpdf"
-	"github.com/akkaraponph/gofpdf/contrib/barcode"
-	"github.com/akkaraponph/gofpdf/internal/example"
+	"github.com/akkaraponph/ghostpdf"
+	"github.com/akkaraponph/ghostpdf/contrib/barcode"
+	"github.com/akkaraponph/ghostpdf/internal/example"
 	"github.com/boombuler/barcode/code128"
 	"github.com/boombuler/barcode/qr"
 )
