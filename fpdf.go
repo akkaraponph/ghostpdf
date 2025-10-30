@@ -2532,6 +2532,10 @@ func (f *Fpdf) SplitLines(txt []byte, w float64) [][]byte {
 	// Function contributed by Bruno Michel
 	lines := [][]byte{}
 	cw := f.currentFont.Cw
+	// Add bounds check to prevent index out of range
+	if len(cw) == 0 {
+		return lines
+	}
 	wmax := int(math.Ceil((w - 2*f.cMargin) * 1000 / f.fontSize))
 	s := bytes.Replace(txt, []byte("\r"), []byte{}, -1)
 	nb := len(s)
@@ -2545,7 +2549,14 @@ func (f *Fpdf) SplitLines(txt []byte, w float64) [][]byte {
 	l := 0
 	for i < nb {
 		c := s[i]
-		l += cw[c]
+		// Add bounds check for character width access
+		if int(c) < len(cw) {
+			l += cw[c]
+		} else if f.currentFont.Desc.MissingWidth != 0 {
+			l += f.currentFont.Desc.MissingWidth
+		} else {
+			l += 500 // Default fallback width
+		}
 		if c == ' ' || c == '\t' || c == '\n' {
 			sep = i
 		}
@@ -2925,7 +2936,7 @@ func (f *Fpdf) WriteLinkID(h float64, displayStr string, linkID int) {
 //
 // width indicates the width of the box the text will be drawn in. This is in
 // the unit of measure specified in New(). If it is set to 0, the bounding box
-//of the page will be taken (pageWidth - leftMargin - rightMargin).
+// of the page will be taken (pageWidth - leftMargin - rightMargin).
 //
 // lineHeight indicates the line height in the unit of measure specified in
 // New().
