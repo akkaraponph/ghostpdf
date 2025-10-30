@@ -32,18 +32,23 @@ import (
 	"testing"
 	"time"
 
-	"github.com/akkaraponph/ghostpdf"
+	gofpdf "github.com/akkaraponph/ghostpdf"
 	"github.com/akkaraponph/ghostpdf/internal/example"
 	"github.com/akkaraponph/ghostpdf/internal/files"
 )
 
 func init() {
+	// Ensure the PDF directory exists before attempting cleanup
+	_ = os.MkdirAll(example.PdfDir(), 0755)
 	cleanup()
 }
 
 func cleanup() {
 	filepath.Walk(example.PdfDir(),
 		func(path string, info os.FileInfo, err error) (reterr error) {
+			if err != nil || info == nil {
+				return nil
+			}
 			if info.Mode().IsRegular() {
 				dir, _ := filepath.Split(path)
 				if "reference" != filepath.Base(dir) {
@@ -1776,7 +1781,7 @@ func ExampleFpdf_RegisterImageReader() {
 		wd       = 210
 		ht       = 297
 		fontSize = 15
-		urlStr   = "https://github.com/akkaraponph/ghostpdf/blob/master/image/gofpdf.png?raw=true"
+		urlStr   = "https://github.com/akkaraponph/ghostpdf/blob/main/image/gofpdf.png?raw=true"
 		msgStr   = `Images from the web can be easily embedded when a PDF document is generated.`
 	)
 

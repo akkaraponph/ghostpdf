@@ -250,7 +250,7 @@ for file attachments and annotations.
 [draw2d-site]: https://github.com/llgcode/draw2d
 [effective-go]: https://golang.org/doc/effective_go.html 
 [fpdf-site]: http://www.fpdf.org/
-[fpdf-test]: https://github.com/akkaraponph/ghostpdf/blob/master/fpdf_test.go
+[fpdf-test]: https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go
 [gfont]: https://fonts.google.com/
 [github]: https://github.com/akkaraponph/ghostpdf
 [godoc]: https://godoc.org/github.com/akkaraponph/ghostpdf
@@ -258,13 +258,13 @@ for file attachments and annotations.
 [issue109]: https://github.com/akkaraponph/ghostpdf/issues/109
 [jung]: https://github.com/phpdave11/
 [last-commit]: https://github.com/akkaraponph/ghostpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
-[license]: https://raw.githubusercontent.com/phpdave11/gofpdf/master/LICENSE
+[license]: https://raw.githubusercontent.com/phpdave11/gofpdf/main/LICENSE
 [lint]: https://github.com/golang/lint
-[logo]: https://github.com/akkaraponph/ghostpdf/raw/master/image/logo_gofpdf.jpg?raw=true
-[noto]: https://github.com/jsntn/webfonts/blob/master/NotoSansSC-Regular.ttf
+[logo]: https://github.com/akkaraponph/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true
+[noto]: https://github.com/jsntn/webfonts/blob/main/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
 [report]: https://goreportcard.com/report/github.com/akkaraponph/ghostpdf
 [status]: https://travis-ci.org/phpdave11/gofpdf
-[test]: https://github.com/akkaraponph/ghostpdf/blob/master/fpdf_test.go
+[test]: https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go
 [unmaintained]: http://unmaintained.tech/
 [vet]: https://golang.org/cmd/vet/
