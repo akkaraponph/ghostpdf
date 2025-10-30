@@ -2,14 +2,14 @@ package main
 
 // This command demonstrates the use of ghotscript to reduce the size
 // of generated PDFs. This is based on a comment made by farkerhaiku:
-// https://github.com/looksocial/golpdf/issues/57#issuecomment-185843315
+// https://github.com/akkaraponph/gofpdf/issues/57#issuecomment-185843315
 
 import (
 	"fmt"
 	"os"
 	"os/exec"
 
-	"github.com/looksocial/golpdf"
+	"github.com/akkaraponph/gofpdf"
 )
 
 func report(fileStr string, err error) {

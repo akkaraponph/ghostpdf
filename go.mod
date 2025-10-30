@@ -1,4 +1,4 @@
-module github.com/looksocial/golpdf
+module github.com/akkaraponph/gofpdf
 
 go 1.12
 
