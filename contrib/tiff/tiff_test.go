@@ -1,9 +1,9 @@
 package tiff_test
 
 import (
-	"github.com/looksocial/ghostpdf"
-	"github.com/looksocial/ghostpdf/contrib/tiff"
-	"github.com/looksocial/ghostpdf/internal/example"
+	"github.com/akkaraponph/ghostpdf"
+	"github.com/akkaraponph/ghostpdf/contrib/tiff"
+	"github.com/akkaraponph/ghostpdf/internal/example"
 )
 
 // ExampleRegisterFile demonstrates the loading and display of a TIFF image.

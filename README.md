@@ -2,10 +2,10 @@
 
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/phpdave11/gofpdf/main/LICENSE)
-[![Report](https://goreportcard.com/badge/github.com/looksocial/ghostpdf)](https://goreportcard.com/report/github.com/looksocial/ghostpdf)
-[![GoDoc](https://img.shields.io/badge/godoc-GhostPDF-blue.svg)](https://godoc.org/github.com/looksocial/ghostpdf)
+[![Report](https://goreportcard.com/badge/github.com/akkaraponph/ghostpdf)](https://goreportcard.com/report/github.com/akkaraponph/ghostpdf)
+[![GoDoc](https://img.shields.io/badge/godoc-GhostPDF-blue.svg)](https://godoc.org/github.com/akkaraponph/ghostpdf)
 
-![](https://github.com/looksocial/ghostpdf/raw/main/image/ghostpdf.png?raw=true)
+![](https://github.com/akkaraponph/ghostpdf/raw/main/image/ghostpdf.png?raw=true)
 
 > **Note for Contributors and Users**: This package (`ghostpdf`) is a fork of [gofpdf](https://github.com/jung-kurt/gofpdf), renamed from `gofpdf` to `ghostpdf` with **added Thai font support**. All the original functionality of gofpdf is preserved, and this fork includes embedded Thai fonts and enhanced UTF-8 support for Thai language text rendering.
 >
@@ -59,13 +59,13 @@ page encodings for languages that have fewer than 256 glyphs.
 To install the package on your system, run
 
 ``` shell
-go get github.com/looksocial/ghostpdf
+go get github.com/akkaraponph/ghostpdf
 ```
 
 Later, to receive updates, run
 
 ``` shell
-go get -u -v github.com/looksocial/ghostpdf/...
+go get -u -v github.com/akkaraponph/ghostpdf/...
 ```
 
 ## Quick Start
@@ -81,7 +81,7 @@ err := pdf.OutputFileAndClose("hello.pdf")
 ```
 
 See the functions in the
-[fpdf\_test.go](https://github.com/looksocial/ghostpdf/blob/main/fpdf_test.go)
+[fpdf\_test.go](https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go)
 file (shown as examples in this documentation) for more advanced PDF
 examples.
 
@@ -129,7 +129,7 @@ the tests complete.
 
 Please note that these examples run in the context of a test. In order
 run an example as a standalone application, you’ll need to examine
-[fpdf\_test.go](https://github.com/looksocial/ghostpdf/blob/main/fpdf_test.go)
+[fpdf\_test.go](https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go)
 for some helper routines, for example `exampleFilename()` and
 `summary()`.
 
@@ -200,7 +200,7 @@ Here are guidelines for making submissions. Your change should
   - be properly documented
   - be formatted with `go fmt`
   - include an example in
-    [fpdf\_test.go](https://github.com/looksocial/ghostpdf/blob/main/fpdf_test.go)
+    [fpdf\_test.go](https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go)
     if appropriate
   - conform to the standards of [golint](https://github.com/golang/lint)
     and [go vet](https://golang.org/cmd/vet/), that is, `golint .` and

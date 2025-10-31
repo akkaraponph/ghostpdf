@@ -70,11 +70,11 @@ page encodings for languages that have fewer than 256 glyphs.
 
 To install the package on your system, run
 
-	go get github.com/looksocial/ghostpdf
+	go get github.com/akkaraponph/ghostpdf
 
 Later, to receive updates, run
 
-	go get -u -v github.com/looksocial/ghostpdf/...
+	go get -u -v github.com/akkaraponph/ghostpdf/...
 
 # Quick Start
 

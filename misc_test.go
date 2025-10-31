@@ -3,7 +3,7 @@ package gofpdf_test
 import (
 	"testing"
 
-	gofpdf "github.com/looksocial/ghostpdf"
+	gofpdf "github.com/akkaraponph/ghostpdf"
 )
 
 // Test attachment operations

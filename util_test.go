@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	gofpdf "github.com/looksocial/ghostpdf"
+	gofpdf "github.com/akkaraponph/ghostpdf"
 )
 
 // Test exported utility functions and types

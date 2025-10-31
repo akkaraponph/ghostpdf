@@ -1,4 +1,4 @@
-module github.com/looksocial/ghostpdf
+module github.com/akkaraponph/ghostpdf
 
 go 1.16
 

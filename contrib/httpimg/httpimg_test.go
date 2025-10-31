@@ -1,9 +1,9 @@
 package httpimg_test
 
 import (
-	gofpdf "github.com/looksocial/ghostpdf"
-	"github.com/looksocial/ghostpdf/contrib/httpimg"
-	"github.com/looksocial/ghostpdf/internal/example"
+	gofpdf "github.com/akkaraponph/ghostpdf"
+	"github.com/akkaraponph/ghostpdf/contrib/httpimg"
+	"github.com/akkaraponph/ghostpdf/internal/example"
 )
 
 func ExampleRegister() {
@@ -12,7 +12,7 @@ func ExampleRegister() {
 	pdf.SetFillColor(200, 200, 220)
 	pdf.AddPage()
 
-	url := "https://github.com/looksocial/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true"
+	url := "https://github.com/akkaraponph/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true"
 	httpimg.Register(pdf, url, "")
 	pdf.Image(url, 15, 15, 267, 0, false, "", 0, "")
 	fileStr := example.Filename("contrib_httpimg_Register")

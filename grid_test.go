@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/looksocial/ghostpdf"
+	"github.com/akkaraponph/ghostpdf"
 )
 
 func TestTickmarksAdvanced(t *testing.T) {

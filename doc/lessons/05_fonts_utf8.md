@@ -136,7 +136,7 @@ pdf.SetFont("Kanit", "BI", 14) // Bold + Italic
 ```go
 package main
 
-import "github.com/looksocial/ghostpdf"
+import "github.com/akkaraponph/ghostpdf"
 
 func main() {
     pdf := gofpdf.New("P", "mm", "A4", "")

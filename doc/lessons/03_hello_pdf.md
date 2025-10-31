@@ -6,7 +6,7 @@ Create a page, write centered text, and save.
 package main
 
 import (
-    gofpdf "github.com/looksocial/ghostpdf"
+    gofpdf "github.com/akkaraponph/ghostpdf"
 )
 
 func main() {

@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/looksocial/ghostpdf"
+	"github.com/akkaraponph/ghostpdf"
 )
 
 var gofpdfDir string

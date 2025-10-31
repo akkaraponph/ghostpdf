@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/looksocial/ghostpdf"
+	"github.com/akkaraponph/ghostpdf"
 )
 
 func errPrintf(fmtStr string, args ...interface{}) {

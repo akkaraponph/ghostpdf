@@ -32,9 +32,9 @@ import (
 	"testing"
 	"time"
 
-	gofpdf "github.com/looksocial/ghostpdf"
-	"github.com/looksocial/ghostpdf/internal/example"
-	"github.com/looksocial/ghostpdf/internal/files"
+	gofpdf "github.com/akkaraponph/ghostpdf"
+	"github.com/akkaraponph/ghostpdf/internal/example"
+	"github.com/akkaraponph/ghostpdf/internal/files"
 )
 
 func init() {
@@ -1573,7 +1573,7 @@ func ExampleFpdf_CellFormat_align() {
 				pdf.CellFormat(170, 257, rec.txt, borderStr, 0, rec.align, false, 0, linkStr)
 				borderStr = ""
 			}
-			linkStr = "https://github.com/looksocial/ghostpdf"
+			linkStr = "https://github.com/akkaraponph/ghostpdf"
 		}
 	}
 	pdf := gofpdf.New("P", "mm", "A4", "") // A4 210.0 x 297.0
@@ -1781,7 +1781,7 @@ func ExampleFpdf_RegisterImageReader() {
 		wd       = 210
 		ht       = 297
 		fontSize = 15
-		urlStr   = "https://github.com/looksocial/ghostpdf/blob/main/image/ghostpdf.png?raw=true"
+		urlStr   = "https://github.com/akkaraponph/ghostpdf/blob/main/image/ghostpdf.png?raw=true"
 		msgStr   = `Images from the web can be easily embedded when a PDF document is generated.`
 	)
 

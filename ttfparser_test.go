@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/looksocial/ghostpdf"
-	"github.com/looksocial/ghostpdf/internal/example"
+	"github.com/akkaraponph/ghostpdf"
+	"github.com/akkaraponph/ghostpdf/internal/example"
 )
 
 func ExampleTtfParse() {

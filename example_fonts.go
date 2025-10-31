@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/looksocial/ghostpdf"
+	"github.com/akkaraponph/ghostpdf"
 )
 
 func main() {

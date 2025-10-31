@@ -6,7 +6,7 @@ ghostpdf is a pure Go PDF generator. It does not require external C libs and wor
 
 ### Install
 ```bash
-go get github.com/looksocial/ghostpdf
+go get github.com/akkaraponph/ghostpdf
 ```
 
 ### Minimal example
@@ -14,7 +14,7 @@ go get github.com/looksocial/ghostpdf
 package main
 
 import (
-    gofpdf "github.com/looksocial/ghostpdf"
+    gofpdf "github.com/akkaraponph/ghostpdf"
 )
 
 func main() {

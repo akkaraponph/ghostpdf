@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"testing"
 
-	gofpdf "github.com/looksocial/ghostpdf"
+	gofpdf "github.com/akkaraponph/ghostpdf"
 )
 
 // Test GobEncode/GobDecode for ImageInfoType
