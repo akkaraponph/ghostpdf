@@ -6,8 +6,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/akkaraponph/ghostpdf"
-	"github.com/akkaraponph/ghostpdf/internal/example"
+	"github.com/looksocial/ghostpdf"
+	"github.com/looksocial/ghostpdf/internal/example"
 )
 
 func ExampleNewImporter() {

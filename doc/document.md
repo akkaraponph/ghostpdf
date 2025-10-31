@@ -56,13 +56,13 @@ See [Font Documentation](fonts_reference.md) for complete guide.
 To install the package on your system, run
 
 ```shell
-go get github.com/akkaraponph/ghostpdf
+go get github.com/looksocial/ghostpdf
 ```
 
 Later, to receive updates, run
 
 ```shell
-go get -u -v github.com/akkaraponph/ghostpdf/...
+go get -u -v github.com/looksocial/ghostpdf/...
 ```
 
 ## Quick Start
@@ -278,28 +278,28 @@ for file attachments and annotations.
 [badge-github]: https://img.shields.io/badge/project-Git_Hub-blue.svg
 [badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [badge-no-maintain]: http://unmaintained.tech/badge.svg
-[badge-report]: https://goreportcard.com/badge/github.com/akkaraponph/ghostpdf
+[badge-report]: https://goreportcard.com/badge/github.com/looksocial/ghostpdf
 [badge-status]: https://travis-ci.org/phpdave11/gofpdf.svg?branch=master
 [coverage]: https://blog.golang.org/cover
 [dfont]: http://dejavu-fonts.org/
 [draw2d-site]: https://github.com/llgcode/draw2d
 [effective-go]: https://golang.org/doc/effective_go.html 
 [fpdf-site]: http://www.fpdf.org/
-[fpdf-test]: https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go
+[fpdf-test]: https://github.com/looksocial/ghostpdf/blob/main/fpdf_test.go
 [gfont]: https://fonts.google.com/
-[github]: https://github.com/akkaraponph/ghostpdf
-[godoc]: https://godoc.org/github.com/akkaraponph/ghostpdf
+[github]: https://github.com/looksocial/ghostpdf
+[godoc]: https://godoc.org/github.com/looksocial/ghostpdf
 [gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#phpdave11/gofpdf
-[issue109]: https://github.com/akkaraponph/ghostpdf/issues/109
+[issue109]: https://github.com/looksocial/ghostpdf/issues/109
 [jung]: https://github.com/phpdave11/
-[last-commit]: https://github.com/akkaraponph/ghostpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
+[last-commit]: https://github.com/looksocial/ghostpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
 [license]: https://raw.githubusercontent.com/phpdave11/gofpdf/main/LICENSE
 [lint]: https://github.com/golang/lint
-[logo]: https://github.com/akkaraponph/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true
+[logo]: https://github.com/looksocial/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true
 [noto]: https://github.com/jsntn/webfonts/blob/main/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
-[report]: https://goreportcard.com/report/github.com/akkaraponph/ghostpdf
+[report]: https://goreportcard.com/report/github.com/looksocial/ghostpdf
 [status]: https://travis-ci.org/phpdave11/gofpdf
-[test]: https://github.com/akkaraponph/ghostpdf/blob/main/fpdf_test.go
+[test]: https://github.com/looksocial/ghostpdf/blob/main/fpdf_test.go
 [unmaintained]: http://unmaintained.tech/
 [vet]: https://golang.org/cmd/vet/

@@ -3,7 +3,7 @@ package gofpdf_test
 import (
 	"testing"
 
-	"github.com/akkaraponph/ghostpdf"
+	"github.com/looksocial/ghostpdf"
 )
 
 // Test StateType functionality

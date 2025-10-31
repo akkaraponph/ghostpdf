@@ -167,7 +167,7 @@ project/
 ```go
 package main
 
-import "github.com/akkaraponph/ghostpdf"
+import "github.com/looksocial/ghostpdf"
 
 func main() {
     // Setup

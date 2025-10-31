@@ -3,7 +3,7 @@
 ### Dependency
 Add the library to your project:
 ```bash
-go get github.com/akkaraponph/ghostpdf
+go get github.com/looksocial/ghostpdf
 ```
 
 ### Folder tips
@@ -15,7 +15,7 @@ go get github.com/akkaraponph/ghostpdf
 package main
 
 import (
-    gofpdf "github.com/akkaraponph/ghostpdf"
+    gofpdf "github.com/looksocial/ghostpdf"
 )
 
 func main() {

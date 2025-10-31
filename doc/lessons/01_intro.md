@@ -4,7 +4,7 @@ gofpdf is a pure Go PDF generator. It does not require external C libs and works
 
 ### Install
 ```bash
-go get github.com/akkaraponph/ghostpdf
+go get github.com/looksocial/ghostpdf
 ```
 
 ### Minimal example
@@ -12,7 +12,7 @@ go get github.com/akkaraponph/ghostpdf
 package main
 
 import (
-    gofpdf "github.com/akkaraponph/ghostpdf"
+    gofpdf "github.com/looksocial/ghostpdf"
 )
 
 func main() {

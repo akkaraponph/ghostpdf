@@ -3,7 +3,7 @@ package gofpdf_test
 import (
 	"testing"
 
-	gofpdf "github.com/akkaraponph/ghostpdf"
+	gofpdf "github.com/looksocial/ghostpdf"
 )
 
 // Test font operations

@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	gofpdf "github.com/akkaraponph/ghostpdf"
+	gofpdf "github.com/looksocial/ghostpdf"
 )
 
 // Test transformation functions
