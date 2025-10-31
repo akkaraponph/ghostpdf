@@ -2,6 +2,15 @@
 Package gofpdf implements a PDF document generator with high level
 support for text, drawing and images.
 
+Note for Contributors and Users: This package (ghostpdf) is a fork of gofpdf,
+renamed from gofpdf to ghostpdf with added Thai font support. All the original
+functionality of gofpdf is preserved, and this fork includes embedded Thai fonts
+and enhanced UTF-8 support for Thai language text rendering.
+
+Original Projects:
+- Original gofpdf by Kurt Jung: github.com/jung-kurt/gofpdf
+- gofpdf maintained by Dave Barnes: github.com/phpdave11/gofpdf
+
 # Features
 
 -   UTF-8 support
@@ -42,13 +51,17 @@ support for text, drawing and images.
 
 -   Import PDFs as templates
 
-gofpdf has no dependencies other than the Go standard library. All tests
-pass on Linux, Mac and Windows platforms.
+ghostpdf has no dependencies other than the Go standard library. All tests
+pass on Linux, Mac and Windows platforms. Thai fonts are embedded in the
+package, requiring no external dependencies.
 
-gofpdf supports UTF-8 TrueType fonts and “right-to-left” languages. Note
-that Chinese, Japanese, and Korean characters may not be included in
-many general purpose fonts. For these languages, a specialized font (for
-example, NotoSansSC for simplified Chinese) can be used.
+ghostpdf supports UTF-8 TrueType fonts and "right-to-left" languages. This
+fork includes extensive Thai font support with 18+ embedded Thai font families
+(such as Kanit, Sarabun, Prompt, Taviraj, and many more) that can be used
+directly without additional setup. Note that Chinese, Japanese, and Korean
+characters may not be included in many general purpose fonts. For these
+languages, a specialized font (for example, NotoSansSC for simplified Chinese)
+can be used.
 
 Also, support is provided to automatically translate UTF-8 runes to code
 page encodings for languages that have fewer than 256 glyphs.
@@ -172,12 +185,12 @@ production mode.
 
 # Contributing Changes
 
-gofpdf is a global community effort and you are invited to make it even
-better. If you have implemented a new feature or corrected a problem,
-please consider contributing your change to the project. A contribution
-that does not directly pertain to the core functionality of gofpdf
-should be placed in its own directory directly beneath the contrib
-directory.
+ghostpdf is a fork of gofpdf and welcomes contributions, especially those
+related to Thai language support and font enhancements. If you have
+implemented a new feature or corrected a problem, please consider
+contributing your change to the project. A contribution that does not
+directly pertain to the core functionality of ghostpdf should be placed
+in its own directory directly beneath the contrib directory.
 
 Here are guidelines for making submissions. Your change should
 
@@ -198,14 +211,23 @@ Pull requests are the preferred means of accepting your changes.
 
 # License
 
-gofpdf is released under the MIT License. It is copyrighted by Kurt Jung
-and the contributors acknowledged below.
+ghostpdf is released under the MIT License, inheriting the license from
+the original gofpdf project. It is copyrighted by Kurt Jung and the
+contributors acknowledged below, as well as the ghostpdf maintainers.
+
+# References
+
+This package is based on the gofpdf project. For reference to the original implementations:
+
+- Original gofpdf by Kurt Jung: github.com/jung-kurt/gofpdf
+- gofpdf maintained by Dave Barnes: github.com/phpdave11/gofpdf
 
 # Acknowledgments
 
-This package’s code and documentation are closely derived from the FPDF
-library created by Olivier Plathey, and a number of font and image
-resources are copied directly from it. Bruno Michel has provided
+This package is a fork of gofpdf originally written by Kurt Jung. The
+code and documentation are closely derived from the FPDF library created
+by Olivier Plathey, and a number of font and image resources are copied
+directly from it. Bruno Michel has provided
 valuable assistance with the code. Drawing support is adapted from the
 FPDF geometric figures script by David Hernández Sanz. Transparency
 support is adapted from the FPDF transparency script by Martin Hall-May.

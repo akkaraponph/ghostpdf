@@ -1,14 +1,20 @@
-# GoFPDF document generator
+# GhostPDF document generator
 
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/phpdave11/gofpdf/main/LICENSE)
 [![Report](https://goreportcard.com/badge/github.com/looksocial/ghostpdf)](https://goreportcard.com/report/github.com/looksocial/ghostpdf)
-[![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/looksocial/ghostpdf)
+[![GoDoc](https://img.shields.io/badge/godoc-GhostPDF-blue.svg)](https://godoc.org/github.com/looksocial/ghostpdf)
 
-![](https://github.com/looksocial/ghostpdf/raw/main/image/logo_gofpdf.jpg?raw=true)
+![](https://github.com/looksocial/ghostpdf/raw/main/image/ghostpdf.png?raw=true)
 
-Package gofpdf implements a PDF document generator with high level
-support for text, drawing and images.
+> **Note for Contributors and Users**: This package (`ghostpdf`) is a fork of [gofpdf](https://github.com/jung-kurt/gofpdf), renamed from `gofpdf` to `ghostpdf` with **added Thai font support**. All the original functionality of gofpdf is preserved, and this fork includes embedded Thai fonts and enhanced UTF-8 support for Thai language text rendering.
+>
+> **Original Projects**:
+> - Original gofpdf by Kurt Jung: [github.com/jung-kurt/gofpdf](https://github.com/jung-kurt/gofpdf)
+> - gofpdf maintained by Dave Barnes: [github.com/phpdave11/gofpdf](https://github.com/phpdave11/gofpdf)
+
+Package ghostpdf implements a PDF document generator with high level
+support for text, drawing and images, including comprehensive Thai font support.
 
 ## Features
 
@@ -32,13 +38,16 @@ support for text, drawing and images.
   - Charting facility
   - Import PDFs as templates
 
-gofpdf has no dependencies other than the Go standard library. All tests
-pass on Linux, Mac and Windows platforms.
+ghostpdf has no dependencies other than the Go standard library. All tests
+pass on Linux, Mac and Windows platforms. Thai fonts are embedded in the
+package, requiring no external dependencies.
 
-gofpdf supports UTF-8 TrueType fonts and “right-to-left” languages. Note
-that Chinese, Japanese, and Korean characters may not be included in
-many general purpose fonts. For these languages, a specialized font (for
-example,
+ghostpdf supports UTF-8 TrueType fonts and "right-to-left" languages. This
+fork includes **extensive Thai font support** with 18+ embedded Thai font families
+(such as Kanit, Sarabun, Prompt, Taviraj, and many more) that can be used
+directly without additional setup. Note that Chinese, Japanese, and Korean
+characters may not be included in many general purpose fonts. For these
+languages, a specialized font (for example,
 [NotoSansSC](https://github.com/jsntn/webfonts/blob/main/NotoSansSC-Regular.ttf)
 for simplified Chinese) can be used.
 
@@ -178,12 +187,12 @@ different forms. It uses gofpdf for its document production mode.
 
 ## Contributing Changes
 
-gofpdf is a global community effort and you are invited to make it even
-better. If you have implemented a new feature or corrected a problem,
-please consider contributing your change to the project. A contribution
-that does not directly pertain to the core functionality of gofpdf
-should be placed in its own directory directly beneath the `contrib`
-directory.
+ghostpdf is a fork of gofpdf and welcomes contributions, especially those
+related to Thai language support and font enhancements. If you have
+implemented a new feature or corrected a problem, please consider
+contributing your change to the project. A contribution that does not
+directly pertain to the core functionality of ghostpdf should be placed
+in its own directory directly beneath the `contrib` directory.
 
 Here are guidelines for making submissions. Your change should
 
@@ -203,8 +212,16 @@ are the preferred means of accepting your changes.
 
 ## License
 
-gofpdf is released under the MIT License. It is copyrighted by Dave Barnes
-and the contributors acknowledged below.
+ghostpdf is released under the MIT License, inheriting the license from
+the original gofpdf project. It is copyrighted by Dave Barnes and the
+contributors acknowledged below, as well as the ghostpdf maintainers.
+
+## References
+
+This package is based on the gofpdf project. For reference to the original implementations:
+
+- **Original gofpdf by Kurt Jung**: [github.com/jung-kurt/gofpdf](https://github.com/jung-kurt/gofpdf)
+- **gofpdf maintained by Dave Barnes**: [github.com/phpdave11/gofpdf](https://github.com/phpdave11/gofpdf)
 
 ## Acknowledgments
 

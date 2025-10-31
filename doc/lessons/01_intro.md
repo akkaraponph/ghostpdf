@@ -1,6 +1,8 @@
-## Lesson 01 — Introduction to gofpdf
+## Lesson 01 — Introduction to ghostpdf
 
-gofpdf is a pure Go PDF generator. It does not require external C libs and works cross‑platform. You build a `*gofpdf.Fpdf`, add pages, draw text/shapes/images, and output to file or bytes.
+**Note**: This package (`ghostpdf`) is a fork of [gofpdf](https://github.com/jung-kurt/gofpdf), renamed from `gofpdf` to `ghostpdf` with **added Thai font support**. All the original functionality of gofpdf is preserved.
+
+ghostpdf is a pure Go PDF generator. It does not require external C libs and works cross‑platform. You build a `*gofpdf.Fpdf`, add pages, draw text/shapes/images, and output to file or bytes. This fork includes 18+ embedded Thai font families for seamless Thai language support.
 
 ### Install
 ```bash
